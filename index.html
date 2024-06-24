@@ -1,106 +1,1489 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+        <meta name="author" content="WowThemez">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Learning Lab | Home</title>
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="vendor/css/owl.theme.default.css">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="vendor/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="vendor/css/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-</head>
+        <title>Global Learning Lab</title>
 
-<body>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 
-    <header>
-        <nav id="navbar_top" class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.aspx">
-                    <img src="images/SG_logo_blue.svg" alt="" class="img-fluid">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="main_nav">
+        <!-- Font Awesome Icons CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Themify Icons CSS -->
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <!-- Elegant Font Icons CSS -->
+        <link rel="stylesheet" href="css/elegant-font-icons.css">
+        <!-- Elegant Line Icons CSS -->
+        <link rel="stylesheet" href="css/elegant-line-icons.css">
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Venobox CSS -->
+        <link rel="stylesheet" href="css/venobox/venobox.css">
+		<!-- OWL-Carousel CSS -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        <!-- Css Animation CSS -->
+        <link rel="stylesheet" href="css/css-animation.min.css">
+        <!-- Nivo Slider CSS -->
+        <link rel="stylesheet" href="css/nivo-slider.css">
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Press kit</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link global-btn-one" href="images/cv/Dr-Sunita-Gandhi-CV.pdf"
-                                target="_blank">
-                                download resume
-                            </a></li>
-                    </ul>
+        <div class="site-preloader-wrap">
+            <div class="spinner"></div>
+        </div><!-- Preloader -->
 
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <footer class="mt-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4 class="footer-widget">get in touch</h4>
-                    <ul>
-                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+91 74084 06000">+91 740 840 6000</a></li>
-                        <li><i class="fa-solid fa-envelope"></i> <a
-                                href="mailto:sunitag@dignityeducation.org">sunitag@dignityeducation.org</a></li>
-                        <li><i class="fa-solid fa-globe"></i> <a href="www.dignityeducation.org"
-                                target="_blank">www.dignityeducation.org</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="footer-widget">Useful Links</h4>
-                    <ul class="useful-links">
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="resume.html">Press kit</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="footer-widget">Our Newsletter</h4>
-                    <p>Subscribe to 10X Good, our free monthly magazine on education and development.</p>
-                    <div class="subscription-form">
-                        <input type="email" name="email" id="" class="form-control" placeholder="Email Address">
-                        <button type="submit" class="global-btn-three">subscribe</button>
+        <header id="header" class="header-section">
+            <div class="top-header">
+                <div class="container">
+                    <div class="top-content-wrap row">
+                        <div class="col-md-6 d-none d-md-block">
+                            <ul class="left-info">
+                                <li>Venue : CMS, LDA Campus, Lucknow, UP, India</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="right-info">
+                                <li><a href="mailto:info@getilearn.org"><i class="ti-email"></i>info@getilearn.org</a></li>
+                                <li><a href="tel:+91 740 840 6000"><i class="ti-mobile"></i>+91 740 840 6000</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div class="whatspapp-on-mobile">
-        <a href="https://wa.me/+917408406000" target="_blank">
-            <img src="images/whatsapp-01.png" alt="">
-        </a>
-    </div>
-    <div class="copyright">
-        <div class="container">
-            <p class="text-white">© Copyright 2023. All Rights Reserved</p>
-        </div>
-    </div>
+            <div class="bottom-header">
+                <div class="container">
+                    <div class="bottom-content-wrap row">
+                        <div class="col-md-3">
+                            <div class="site-branding">
+                                <a href="index.html"><img src="img/logo.png" alt="Brand"></a>
+                            </div>
+                        </div>
+                       <div class="col-md-9 d-none d-md-block text-right">
+                           <ul id="mainmenu" class="nav navbar-nav nav-menu">
+                                <li class="active"> <a href="index.html">Home</a></li>
+                                <li><a href="who-we-are.html">Who we Are ?</a></li>
+                                <li><a href="global-advisory-committee.html">Global Advisory Committee</a></li>
+                                <li><a href="past-speakers.html">Past Speakers</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                            <a href="https://getilearn.org/Register.aspx" target="_blank" class="default-btn">Register Now</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- /Header Section -->
 
-    <script src="vendor/js/jquery.min.js"></script>
-    <script src="vendor/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/js/owl.carousel.min.js"></script>
-    <script src="vendor/js/jquery-ui.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <div class="header-height"></div>
 
+        <section class="hero-section">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay="" muted="" loop="">
+                  <source src="img/hero-video.mp4" type="video/mp4">
+                  <!-- <source src="video/bg-video.mp4" type="video/webm"> -->
+                  Sorry your browser does not supported!
+                </video>
+              </div>
+            <div class="container">
+                <div class="slider-text">
+                     <h5 class="wow cssanimation fadeInBottom">23-25 Sept 2024</h5>
+                     <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms">Global Learning Lab</h1>
+                     <h3 class="wow cssanimation fadeInBottom" data-wow-delay="1s" data-wow-duration="800ms">A QUALITY EDUCATION FOR ALL</h3>
+                     <p class="wow cssanimation fadeInBottom" data-wow-delay="1s">With Spotlight on Foundational Skills World's Largest FLN Fair</p>
+                     <a href="https://getilearn.org/Register.aspx" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Register Now</a>
+                     <a href="img/brocher/14th-Ed-Leadership-Global-FLN-Learning-Lab-Brochure.pdf" target="_blank" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Download Brochure</a>
+                 </div>
+            </div>
+        </section>
+
+        <section class="promo-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row promo-wrap">
+                            <div class="col-md-4">
+                                <div class="promo-content">
+                                    <div class="promo-thumb">
+                                       <img src="img/icon-3.png" alt="icon">
+                                    </div>
+                                    <div class="promo-text">
+                                        <h3>International Jury</h3>
+                                        <p>An international jury will make the selections.</p>
+                                        <a href="#fellowship" class="read-more">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- /#promo-1 -->
+                            <div class="col-md-4">
+                                <div class="promo-content">
+                                    <div class="promo-thumb">
+                                       <img src="img/icon-2.png" alt="icon">
+                                    </div>
+                                    <div class="promo-text">
+                                        <h3>Fellowships</h3>
+                                        <p>All GETI Fellows are expected to carry out their ideas.</p>
+                                        <a href="#fellowship" class="read-more">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- /#promo-1 -->
+                            <div class="col-md-4">
+                                <div class="promo-content">
+                                    <div class="promo-thumb">
+                                       <img src="img/icon-1.png" alt="icon">
+                                    </div>
+                                    <div class="promo-text">
+                                        <h3>Apply In Advance</h3>
+                                        <p>Fill the Ed Leader Fellowships and Awards Form.</p>
+                                        <a href="https://getilearn.org/Fellowships_awards" target="_blank" class="read-more">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- /#promo-1 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /#Promo-Section -->
+
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 xs-padding">
+                        <div class="about-content">
+                            <h2>Let’s Step up the Act</h2>
+                            <div class="content-para">
+                                <h4 class="heading-four">Dear Changemaker</h4>
+                                <p>
+                                    It is past half-time for SDG4. Progress is slow.
+                                    The problems that were before the Covid with
+                                    52% of children unable to read, remains
+                                    largely unchanged. Many countries have yeat
+                                    to reach the Pre-Covid levels. A quality
+                                    education is implausible without first
+                                    addressing The problem of foundational
+                                    literacy and numeracy (FLN).
+                                </p>
+                                <h4 class="heading-four">A Crisis of Pedagogy</h4>
+                                <p>The much ignored fact is the crises of
+                                    pedagogy. The crisis in learning is a crisis of
+                                    pedagogy; both how we teach the foundational skills, and how quickly we teach
+                                    them. Rote methods of teaching and learning
+                                    are holding hostage enormous potential of
+                                    the children, many of whom drop out of
+                                    schools, and suffer indignation the rest of
+                                    their lives.</p>
+                                <p>How will the world convert its well-intentioned
+                                    resolves into reality, like those made last
+                                    September at the UN Transforming Education
+                                    Summit in New York? What will the pathway to
+                                    universal literacy be? When will foundational
+                                    skills include climate change as their
+                                    essential component now before COP 28?
+                                    What new pedagogies and policies will it take
+                                    to deliver foundational skills within weeks and
+                                    months, and not years?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="img/sunita-02.png" alt="" class="sun-left">
+                            <figcaption>
+                                <strong class="d-block">Sunita Gandhi</strong>
+                                <em class="d-block">Founder, DEVI Sansthan:<br>
+                                    Dignity, Education, Vision International, India<br>
+                                    Former Economist, The World Bank, USA<br>
+                                    PhD (Physics), Cambridge University, UK</em>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /#About Section -->
+
+        <section class="course-section bg-grey padding">
+            <div class="container">
+                <div class="section-heading mb-40 text-center">
+                   <h2>Global Advisory Committee</h2>
+                </div>
+                <div id="course-carousel" class="course-carousel owl-carousel">
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/AichaBahDiallo.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Aïcha Bah Diallo</h5>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Founding Member of
+                                            FAWE, Guinea
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/AAnderson_Headshot.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Alesha Anderson</h5>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Senior Program
+                                            Officer at Pro-Literacy
+                                            Worldwide, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/AlexandreL.jpeg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Alexandre Romanovsky</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Advisor to Companies
+                                            Dedicated to the United
+                                            Nations, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/BILLGrahamL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Bill Graham</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Vice Chair, NGO Committee
+                                            for Education, Learning &
+                                            Literacy at the United
+                                            Nations in New York, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/yogesh_kumar.jpeg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Yogesh Kumar</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Operation & Programs
+                                            Head, HCL Foundation,
+                                            India
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/chris-01.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Chris Macrae</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Head of Talent, Diversity,
+                                            Equity and Inclusion at
+                                            GlaxoSmithKline, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/CindyCharlesL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Cindy Charles</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Kupanda Sisters Inc.
+                                            Founder & CEO,
+                                            Guyana</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/David Bovill.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">David Bovill</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Partnerships Manager,
+                                            DEIP, UK</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/David.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">David J. Rosen</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Director, Adult Literacy
+                                            Resource Institute, University
+                                            of Massachusetts, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/ErnestoSchiefelbein.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Ernesto Schieffelin</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Chilean Pedagogue,
+                                            Professor, Economist &
+                                            Politician, Chile
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/FredMednickL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Fred Mednick</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Founder, Teacher
+                                            Without Borders, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/GailDavvisCarter.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Gail Davvis-Carter</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            UN ECOSOC Representative,
+                                            UN Partner and Social
+                                            Entrepreneur, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/GirishMenon.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Girish Menon</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>CEO, STIR Education,
+                                            UK</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/Inger-MetteL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Inger-Mette Stenseth</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Founder, World Climate
+                                            School, Norway
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/joannef.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Joanne Telser Frere</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Director, Program
+                                            Development, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/JonCorippoL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Jon M Corippo</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Author, Eduprotocols,
+                                            USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/KyleZimmerL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Kyle Zimmer</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Author, Eduprotocols,
+                                            USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/MaryMcCoolBerryL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Mary McCool Berry</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Founder, Read Keys,
+                                            USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/Michael Matos.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Michael Matos</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Education Technology
+                                            Director, ScaleLIT, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/NavneetAnandL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Navneet Anand</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Director, GreyMatters
+                                            Communications &
+                                            Consulting, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/NicolasGraveL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Nicolas Gravel</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Professor of Economics,
+                                            Aix-Marseille University,
+                                            France</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/NixonJosephL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Nixon Joseph</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>CEO, Children's
+                                            LoveCastles Trust,
+                                            India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/PETER CAMPLING.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">PETER CAMPLING</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Global Programmes
+                                            Director, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/PETERKWASIKODJIE.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">PETER KWASI KODJIE</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Secretary-General All
+                                            Africa Student's Union,
+                                            Ghana</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/RanaDajaniL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Rana Dajani</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>President, We Love
+                                            Reading, Jordan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/ravisreedharanL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Ravi Sreedharan</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Founder & President, Indian
+                                            School of Development
+                                            Management, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/Rebecca DoreenL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Rebecca Doreen</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Founding Director,
+                                            Vadiwa Trust
+                                            Organization, Zimbabwe</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/RichardAllenL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Richard Allen</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Director of Partnerships,
+                                            VOYCE, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/RobertThornL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Robert Thorn</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Director, Developing Real
+                                            Learners & Academy of
+                                            Learner Development, Turkey
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/samuel.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Samuel Sasu Adonteng</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>
+                                            Programmes Officer for
+                                            Tertiary Education, AASU,
+                                            Ghana
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/SigamoneyManickaNaickerL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">
+                                            Sigamoney Naicker
+                                        </h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Professor, University of
+                                            the Western Cape,
+                                            South Africa
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/SigbjornL.jpeg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Sigbjorn Dugal</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Founder, Pickatale
+                                            Norway</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/StephenPetersL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Stephen Peters</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>President, The Peters
+                                            Group, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/SylviaL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Sylvia Guimarães</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Co-founder & President,
+                                            Vaga Lume, Brazil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="img/team/VCL.jpg" class="card-img-top" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="flag">
+                                        <h5 class="card-title">Vicky Colbert</h5>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Founder & Director,
+                                            Fundación Escuela Nueva,
+                                            Colombia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="" class="default-btn">Explore More</a>
+                </div>
+            </div>
+        </section><!-- /#Course-Section -->
+
+        <section class="reg-section padding">
+            <div class="container">
+                <div class="row reg-wrap">
+                    <div class="col-lg-8 text-center">
+                        <div class="reg-content">
+                            <h3 class="counter">10,000</h3>
+                            <h2>Schools Globally Involved</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="reg-form">
+                            <div class="form-heading">
+                                <h2>Register Now <span>Get free access to our courses</span></h2>
+                            </div>
+                            <div class="content-para">
+                                <p>Secure your place today.<br>
+                                    All participants will gain access to exclusive
+                                    pre and post-event resources, MOOT and more.</p>
+                                    <div class="text-center">
+                                        <a href="https://getilearn.org/Register.aspx" target="_blank" class="default-btn">Register Now</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Register Section -->
+
+        <section class="our-programms mr-top">
+            <div class="wrapper bg-opacity-rose">
+                <div class="container">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                            <span class="sup-day d-block">Day 1</span>WEDNESDAY &nbsp; &comma; &nbsp; <span
+                                    class="com">23
+                                    SEP 2024</span>
+                          </a>
+                          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <span class="sup-day d-block">Day 2</span>thursday&nbsp; &comma; &nbsp;<span
+                                    class="com">24
+                                    SEP 2024</span>
+                          </a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <span class="sup-day d-block">Day 3</span>friday&nbsp; &comma; &nbsp;<span
+                                    class="com">25 SEP 2024</span>
+                          </a>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="ondayevent">
+                                <h4 class="heading-five text-center mb-0">Come Witness</h4>
+                                <h2 class="heading-secondary text-center">THE STAGE FOR
+                                    TRANSFORMATION</h2>
+                                <div class="floating-l">
+                                    <img src="img/come-witeness.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="sepevent">
+                                    <div class="sepevents">
+                                        <div class="conten-para">
+                                            <p><strong>Opening Keynote:</strong> "The Urgent Need
+                                                for Educational Transformation"</p>
+
+                                            <p><strong>Session:</strong> "Envisioning the New
+                                                Normal in Education"</p>
+
+                                            <p><strong>Panel:</strong> "Research-Based
+                                                Transformative Practices in
+                                                Education"</p>
+
+                                            <p><strong>Introduction:</strong> “The New Paradigm:
+                                                Setting the Foundations"</p>
+                                        </div>
+                                    </div>
+                                    <span class="inaugral-heads">Practical Sessions
+                                        and Training from
+                                        Across the Globe
+                                    </span>
+                                </div>
+
+                                <div class="sepevents">
+                                    <div class="conten-para">
+                                        <p><strong>Classroom
+                                                Simulation:</strong> Comparing
+                                            Traditional Methods
+                                            vs. The New
+                                            Paradigm</p>
+
+                                        <p><strong>Interactive
+                                                Walkthrough:</strong> Research Supporting
+                                            Transformative
+                                            Practices</p>
+                                    </div>
+                                    <span class="inaugral-heads">4 pm Onwards : Cultural Evening
+                                    </span>
+                                </div>
+
+                                <div class="sepevents">
+                                    <div class="conten-para">
+                                        <p>Performances
+                                            Celebrating the Spirit
+                                            of Learning and
+                                            Transformation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="ondayevent">
+                                <div class="sepevents">
+                                    <div class="sepevents">
+                                        <h4 class="heading-five text-center mb-0">Be Empowered</h4>
+                                        <h2 class="heading-secondary text-center">FROM WISHING TO DOING</h2>
+                                        <div class="floating-l">
+                                            <img src="img/empowered-01.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="conten-para">
+                                            <p><strong>Morning Keynote:</strong> "Success Stories:
+                                                Case Studies and Testimonials in
+                                                Transformation”</p>
+
+                                            <p><strong>Panel:</strong> "Overcoming Barriers to
+                                                Implementing a New Normal”</p>
+
+                                            <p><strong>Session:</strong> "The Science of
+                                                Transformation: Evidence and
+                                                Effectiveness”</p>
+
+                                            <p><strong>Demonstration:</strong> "A Day in a
+                                                Transformed Classroom”</p>
+                                        </div>
+                                    </div>
+                                    <span class="inaugral-heads">Practical Sessions
+                                        and Training from
+                                        Across the Globe
+                                    </span>
+                                </div>
+
+                                <div class="sepevents">
+                                    <div class="conten-para">
+                                        <p>Live Teaching
+                                            Demonstrations
+                                            Using
+                                            Transformative
+                                            Methodologies</p>
+
+                                        <p>Data and Metrics
+                                            Walkthrough:
+                                            Measuring the
+                                            Impact of
+                                            Transformation
+                                        </p>
+                                    </div>
+                                    <span class="inaugral-heads">4 pm Onwards : Cultural Evening
+                                    </span>
+                                </div>
+
+                                <div class="sepevents">
+                                    <div class="conten-para">
+                                        <p>Multimedia
+                                            Presentations
+                                            Reflecting
+                                            Educational
+                                            Transformation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="ondayevent">
+                                <div class="sepevents">
+                                    <div class="sepevents">
+                                        <h4 class="heading-five text-center mb-0">Lead Change</h4>
+                                        <h2 class="heading-secondary text-center">SCALING UP
+                                            TRANSFORMATION
+                                        </h2>
+                                        <div class="floating-l">
+                                            <img src="img/lead-change-01.jpg" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="conten-para">
+                                            <p><strong>Morning Keynote:</strong> "Leading
+                                                the Charge: Implementing the
+                                                New Paradigm”</p>
+
+                                            <p><strong>Panel:</strong> "Mapping Your Follow-Up Actions
+                                                for Research or
+                                                Implementation”</p>
+
+                                            <strong>Breakout Sessions:</strong>
+                                            <p><strong>Action Now:</strong> "Immediate Steps
+                                                to Implement the New
+                                                Paradigm”</p>
+
+                                            <p><strong>Networking Session:</strong> “Finding
+                                                Your Transformation Mentor or
+                                                Partner”</p>
+                                        </div>
+                                    </div>
+                                    <span class="inaugral-heads">Research
+                                        Presentations
+                                    </span>
+                                </div>
+
+                                <div class="sepevents">
+                                    <div class="conten-para">
+                                        <p><strong>Join the
+                                                Research:</strong> "How to
+                                            Engage in
+                                            Transformative
+                                            Educational
+                                            Studies”</p>
+
+                                    </div>
+                                    <span class="inaugral-heads">3 pm Onwards : Award Ceremony
+                                    </span>
+                                </div>
+
+                                <div class="sepevents">
+                                    <div class="conten-para">
+                                        <strong>Global Innovator's Awards
+                                            Ceremony</strong>
+                                        <span class="d-block" style="padding-bottom: 6px;">Different
+                                            Awards Categories:</span>
+                                        <p>Paradigm Pioneer Award</p>
+                                        <p>Transformation Trailblazer
+                                            Award</p>
+                                        <p>Educational Visionary
+                                            Award</p>
+                                        <p>The New Normal Innovator
+                                            Award</p>
+                                        <p>Future-Ready Leadership
+                                            Award</p>
+                                        <p>Innovation-in-Action
+                                            Fellowship</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    <!-- /.tab-content -->
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="section-heading mb-40 text-center">
+                   <h2>past Speakers</h2>
+                </div>
+                <div id="testimonial-carousel" class="testimonial-carousel owl-carousel">
+                    <div class="testimonial-item text-center">
+                        <img src="img/past-speaker/MEG_PAGANI.jpg" alt="profile">
+                        <h4>MEG PAGANI <span>ITALY</span></h4>
+                    </div><!-- Review-1-->
+                    <div class="testimonial-item text-center">
+                        <img src="img/past-speaker/DR_THOM_MARKHAM.jpg" alt="profile">
+                        <h4>DR THOM MARKHAM<span>USA</span></h4>
+                    </div><!-- Review-2-->
+                    <div class="testimonial-item text-center">
+                        <img src="img/past-speaker/AMEL_SALIH_ADAM.jpg" alt="profile">
+                        <h4>AMEL SALIH ADAM<span>SUDAN</span></h4>
+                    </div><!-- Review-3-->
+                    <div class="testimonial-item text-center">
+                        <img src="img/past-speaker/MARTIN_RICHARDS.jpg" alt="profile">
+                        <h4>MARTIN RICHARDS<span>SWEDEN</span></h4>
+                    </div><!-- Review-4-->
+                </div>
+                <div class="text-center mt-40">
+                    <a href="past-speakers.html" class="default-btn">Explore More</a>
+                </div>
+            </div>
+        </section><!-- Testimonial Section -->
+
+        <section class="video-cta">
+           <div class="video-bg" data-property="{videoURL:'ziysTLL5dig',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false, ratio:'16/9', quality: 'hd720', showYTLogo: false }"></div>
+            <div class="video-content-wrapper">
+                <div class="container">
+                    <div class="video-content text-center">
+                        <h2>Inviting All Stakeholders</h2>
+                        <div class="img-wrapper"><img src="img/literacy-lets-all-02.png" alt="" class="img-fluid"></div>
+                        <ul>
+                            <li>Governments</li>
+                            <li>International Organisations</li>
+                            <li>Non profit Organisations</li>
+                            <li>Researchers</li>
+                            <li>Schools (Public &amp; Private)</li>
+                            <li>CSR</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Video Section -->
+
+        <section class="blog-section bg-grey padding">
+            <div class="container">
+                <div class="section-heading mb-40 text-center">
+                   <h2>Be At The Forefront Of The Next Big Shift In Education</h2>
+                   <p>Secure your spot now and be part of a transformative journey at th the upcoming 14 Ed Leadership.
+
+                    Together, let's engage in strategic discussions, forge alliances, and explore opportunities to drive impactful and measurable change immediately.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 xs-padding">
+                        <div class="blog-items grid-list row">
+                            <div class="col-md-4 padding-15">
+                                <div class="blog-post">
+                                    <div class="blog-content">
+                                        <h3>IN PERSON</h3>
+                                        <div class="content-para">
+                                            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;&nbsp;<strong><i class="fa-solid fa-indian-rupee-sign"></i> 9,500</strong> includes meals for
+                                                all
+                                                three days + registration</p>
+                                            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;&nbsp;<strong><i class="fa-solid fa-indian-rupee-sign"></i> 1500</strong> per person per day for
+                                                accommodation on
+                                                availability basis (maximum
+                                                of 2 persons per room)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- Post 1 -->
+                            <div class="col-md-4 padding-15">
+                                <div class="blog-post">
+                                    <div class="blog-content">
+                                        <h3>ONLINE ON ZOOM</h3>
+                                        <div class="content-para">
+                                            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;&nbsp;Nominal one-time fee of &nbsp;
+                                                <strong><i class="fa-solid fa-indian-rupee-sign"></i> 500</strong> for registration ($15
+                                                USD) for all three days of
+                                                attendance. Register
+                                                quickly before these places
+                                                run out.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- Post 2 -->
+                            <div class="col-md-4 padding-15">
+                                <div class="blog-post">
+                                    <div class="blog-content">
+                                        <h3>YOUTUBE</h3>
+                                        <div class="content-para">
+                                            <p><i class="fa fa-hand-o-right" aria-hidden="true"></i> &nbsp;&nbsp;Free: Link will be sent
+                                                to the registered
+                                                participants. You are
+                                                welcome to share
+                                                this more widely.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- Post 3 -->
+                        </div>
+                    </div><!-- Blog Posts -->
+                </div>
+            </div>
+        </section><!-- Blog Section -->
+
+        <section class="rebuilding-section">
+            <div class="container">
+                <div class="section-heading mb-40 text-center">
+                    <h2>Research Spotlight</h2>
+                 </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="heading-tertiary">Themes</h3>
+                        <div class="content-para">
+                            <strong class="d-block">FLN Landscape and Research Trends</strong>
+                            <p>Explore the current FLN research landscape,
+                                emphasizing the imperative of research for
+                                SDG4 and Foundational Literacy and
+                                Numeracy (FLN). Delve into the latest trends,
+                                challenges, and transformative opportunities
+                                shaping reading, writing, and arithmetic skills.</p>
+                        </div>
+                        <div class="content-para">
+                            <strong class="d-block">Research, Practice, and Technology in
+                                FLN</strong>
+                            <p>Discuss the seamless integration of research
+                                findings into impactful classroom practices.
+                                Explore demonstrations and discussions on
+                                leveraging technology to narrow the digital
+                                divide in FLN.</p>
+                        </div>
+                        <div class="content-para">
+                            <strong class="d-block">Diversity and Evidence-Based FLN
+                                Practices</strong>
+                            <p>Strategize diversity, equity, and inclusion in
+                                educational settings, particularly focusing on
+                                the education of girls and women. Emphasize
+                                evidence-based FLN practices with a focus on
+                                scalability and sustainability</p>
+                        </div>
+                        <div class="content-para">
+                            <strong class="d-block">Teacher Training and Assessment for
+                                FLN Impact</strong>
+                            <p>Discover research-backed strategies for
+                                training educators in effective FLN instruction.
+                                Explore assessment methods for measuring
+                                impact and progress, providing meaningful
+                                insights.</p>
+                            <p><strong style="color: #2e3192;">Closing Session:</strong> Global Collaboration for FLN
+                                Advancement</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-wrapper"><img src="img/spotlight-03.jpg" alt="" class="img-fluid"><img
+                                src="img/rebuilding-001.png" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="awards-area" id="fellowship">
+            <div class="container">
+                <div class="section-heading mb-40 text-center">
+                    <h2>Global Ed Innovator
+                        Fellowships & Awards</h2>
+                 </div>
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/awards-01.png" alt="Award" class="img-fluid">
+                    </figure>
+                    <div class="story__text">
+                        <div class="content-para">
+                            <p>
+                                Fellowships and Awards are our way of saying: “Thank you for being a part of the change
+                                process so urgently needed in
+                                education.” Fellowships are for promising ideas for research and innovations-in-action.
+                                Awards are for programs which
+                                are already able to demonstrate their impact with evidence.
+                            </p>
+                        </div>
+                        <h3 class="heading-tertiary mb-small">
+                            INTERNATIONAL JURY
+                        </h3>
+                        <div class="content-para">
+                            <p>An international jury will make the selections based on transparent criteria to award
+                                between 100 to 200 Fellowships
+                                this year depending upon the quality of the submissions.</p>
+                        </div>
+                        <h3 class="heading-tertiary mb-small">
+                            FELLOWSHIPS
+                        </h3>
+                        <div class="content-para">
+                            <p>All GETI Fellows are expected to carry out their ideas for change post selection, and to
+                                gather evidence of their implementation on a regular basis in an e-portfolio.
+                                Evidence includes photos, videos, slide presentations, surveys, pre-and
+                                post-intervention data and its analysis
+                                (quantitative, anecdotal and qualitative) as in action research.</p>
+                            <p>All GETI Fellows with evidence will automatically qualify for the Global Ed Innovator
+                                Awards.</p>
+                        </div>
+                        <h3 class="heading-tertiary" style="display: inline-block;">
+                            APPLY IN ADVANCE
+                        </h3>
+                        <div class="content-para">
+                            <p>of the Next
+                                Ed Leadership Global Learning
+                                Lab
+                            </p>
+                            <p>We invite you to fill the Ed Leader
+                                Fellowships and Awards Form: <a href="https://getilearn.org/Fellowships_awards"
+                                    target="_blank" class="external-link">https://getilearn.org/Fellowships_awards</a>
+                            </p>
+                            <p>Attach evidence with the form submission.</p>
+                        </div>
+                    </div>
+                    <div class="row real-row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="real-change">
+                                        <h4>REAL CHANGE</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="real-change">
+                                        <h4>TRANSPARENT CRITERION</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="real-change">
+                                        <h4>INTERNATIONAL JURY</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="internal-juery">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-wrapper"><img src="img/awards-02.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-wrapper"><img src="img/awards-03.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer-section">
+			<div class="container">
+                <div class="row">
+                    <div class="col-md-12 sm-padding">
+                        <div class="copyright text-center">&copy; 2024 Global Learning Lab | <a href="index.html" style="color: #ddd;">EDLeader</a></div>
+                    </div>
+                </div>
+			</div>
+		</footer><!-- /Footer Section -->
+
+		<a data-scroll href="#header" id="scroll-to-top"><i class="arrow_up"></i></a>
+
+		<!-- jQuery Lib -->
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<!-- Tether JS -->
+		<script src="js/vendor/tether.min.js"></script>
+        <!-- Imagesloaded JS -->
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+		<!-- OWL-Carousel JS -->
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<!-- isotope JS -->
+		<script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
+		<!-- Smooth Scroll JS -->
+		<script src="js/vendor/smooth-scroll.min.js"></script>
+		<!-- venobox JS -->
+		<script src="js/vendor/venobox.min.js"></script>
+        <!-- ajaxchimp JS -->
+        <script src="js/vendor/jquery.ajaxchimp.min.js"></script>
+        <!-- Counterup JS -->
+		<script src="js/vendor/jquery.counterup.min.js"></script>
+        <!-- waypoints js -->
+		<script src="js/vendor/jquery.waypoints.v2.0.3.min.js"></script>
+        <!-- Slick Nav JS -->
+        <script src="js/vendor/jquery.slicknav.min.js"></script>
+        <!-- Nivo Slider JS -->
+        <script src="js/vendor/jquery.nivo.slider.pack.js"></script>
+        <!-- YTPlayer JS -->
+	    <script src="js/vendor/jquery.mb.YTPlayer.min.js"></script>
+        <!-- Wow JS -->
+		<script src="js/vendor/wow.min.js"></script>
+		<!-- Contact JS -->
+		<script src="js/contact.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+    </body>
 </html>

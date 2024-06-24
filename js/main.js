@@ -1,244 +1,241 @@
-(function ($) {
-    $(function () {
+/*Unimax Theme Scripts */
 
-        $('#navbar-toggle').click(function () {
-            $('nav ul').slideToggle();
-        });
+(function($){
+    "use strict";
+             
+    $(window).on('load', function() {
+        $('body').addClass('loaded');
+    });
 
-        $('#navbar-toggle').on('click', function () {
-            this.classList.toggle('active');
-        });
+/*=========================================================================
+    	Sticky Header
+=========================================================================*/ 
+    $(function() {
+        var header = $("#header"),
+            yOffset = 0,
+            triggerPoint = 100;
+        $(window).on( 'scroll', function() {
+            yOffset = $(window).scrollTop();
 
-        $('nav ul li a:not(:only-child)').click(function (e) {
-            $(this).siblings('.navbar-dropdown').slideToggle("slow");
+            if (yOffset >= triggerPoint) {
+            	header.removeClass("animated cssanimation fadeIn");
+                header.addClass("navbar-fixed-top  cssanimation animated fadeInTop");
+            } else {
+                header.removeClass("navbar-fixed-top cssanimation  animated fadeInTop");
+                header.addClass("animated cssanimation fadeIn");
+            }
 
-            $('.navbar-dropdown').not($(this).siblings()).hide("slow");
-            e.stopPropagation();
-        });
-
-        $('html').click(function () {
-            $('.navbar-dropdown').hide();
         });
     });
-})(jQuery);
+/*=========================================================================
+        Vdeo Background
+=========================================================================*/
+    $(".video-bg").YTPlayer();
+/*=========================================================================
+    Nivo slider 
+=========================================================================*/
+    $('#main-slider').nivoSlider({
+        effect: 'fade',
+        animSpeed: 300,
+        pauseTime: 500000,
+        directionNav: true,
+        manualAdvance: false,
+        controlNavThumbs: false,
+        pauseOnHover: true,
+        controlNav: false,
+        prevText: "<i class='ti-arrow-left'></i>",
+        nextText: "<i class='ti-arrow-right'></i>"
+    });
 
-document.addEventListener("DOMContentLoaded", function () {
+/*=========================================================================
+    Mobile Menu
+=========================================================================*/  
+    $(function(){
+        $('#mainmenu').slicknav({
+            prependTo: '.site-branding',
+            label: '',
+            allowParentLinks: true
+        });
+    });
+             
+/*=========================================================================
+	Counter Up Active
+=========================================================================*/
+	var counterSelector = $('.counter');
+	counterSelector.counterUp({
+		delay: 10,
+		time: 1000
+	});
+             
+/*=========================================================================
+    Course Carousel
+=========================================================================*/
+    $('#course-carousel').owlCarousel({
+        loop: true,
+        margin: 15,
+        autoplay: false,
+        smartSpeed: 500,
+        nav: false,
+        dots: false,
+        responsive : {
+            0 : {
+                items: 1
+            },
+            480 : {
+                items: 1,
+            },
+            768 : {
+                items: 2,
+            },
+            992 : {
+                items: 4,
+            }
+        }
+    });          
+             
+/*=========================================================================
+    Isotope Active
+=========================================================================*/
+	$('.gallery-items').imagesLoaded( function() {
 
-    window.addEventListener('scroll', function () {
+		 // Add isotope click function
+		$('.gallery-filter li').on( 'click', function(){
+	        $(".gallery-filter li").removeClass("active");
+	        $(this).addClass("active");
+	 
+	        var selector = $(this).attr('data-filter');
+	        $(".gallery-items").isotope({
+	            filter: selector,
+	            animationOptions: {
+	                duration: 750,
+	                easing: 'linear',
+	                queue: false,
+	            }
+	        });
+	        return false;
+	    });
 
-        if (window.scrollY > 200) {
-            document.getElementById('navbar_top').classList.add('fixed-top');
-            // add padding top to show content behind navbar
-            navbar_height = document.querySelector('.navbar').offsetHeight;
-            document.body.style.paddingTop = navbar_height + 'px';
+	    $(".gallery-items").isotope({
+	        itemSelector: '.single-item',
+	        layoutMode: 'masonry',
+	    });
+	});
+
+/*=========================================================================
+    Initialize smoothscroll plugin
+=========================================================================*/
+	smoothScroll.init({
+		offset: 60
+	});   
+/*=========================================================================
+    Testimonial Carousel
+=========================================================================*/
+	$('#testimonial-carousel').owlCarousel({
+        loop: true,
+        margin: 15,
+        center: true,
+        autoplay: true,
+        smartSpeed: 500,
+        items: 1,
+        nav: false,
+        dots: true,
+        responsive : {
+			0 : {
+				items: 1,
+			},
+			480 : {
+				items: 2,
+			},
+			768 : {
+				items: 2
+			},
+			992 : {
+				items: 3
+			}
+		}
+    });
+
+/*=========================================================================
+        Sponsor Carousel
+=========================================================================*/
+    $('#sponsor-carousel').owlCarousel({
+        loop: true,
+        margin: 40,
+        autoplay: true,
+        smartSpeed: 500,
+        nav: false,
+        dots: false,
+        responsive : {
+            0 : {
+                items: 2
+            },
+            480 : {
+                items: 3,
+            },
+            768 : {
+                items: 4
+            },
+            992 : {
+                items: 6
+            }
+        }
+    });
+		
+/*=========================================================================
+        Active venobox
+=========================================================================*/
+	$('.img-popup').venobox({
+		numeratio: true,
+		infinigall: true
+	}); 
+
+/*=========================================================================
+	WOW Active
+=========================================================================*/ 
+    new WOW().init();             
+             
+/*=========================================================================
+  Scroll To Top
+=========================================================================*/     
+    $(window).on( 'scroll', function () {
+        if ($(this).scrollTop() > 100) {
+            $('#scroll-to-top').fadeIn();
         } else {
-            document.getElementById('navbar_top').classList.remove('fixed-top');
-            // remove padding top from body
-            document.body.style.paddingTop = '0';
+            $('#scroll-to-top').fadeOut();
         }
     });
-});
 
-// Header JS Ends
+/*=========================================================================
+    MAILCHIMP
+=========================================================================*/
+    if ($('.subscribe-form').length>0) {
+        /*  MAILCHIMP  */
+        $('.subscribe-form').ajaxChimp({
+            language: 'es',
+            callback: mailchimpCallback,
+            url: "//alexatheme.us14.list-manage.com/subscribe/post?u=48e55a88ece7641124b31a029&amp;id=361ec5b369" 
+        });
+    }
 
-$('.hero-fading-slide').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,
-    animateOut: 'fadeOut',
-    navText: ['<i class="fa-solid fa-arrow-up"></i>', '<i class="fa-solid fa-arrow-down"></i>'],
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
+    function mailchimpCallback(resp) {
+        if (resp.result === 'success') {
+            $('#subscribe-result').addClass('subs-result');
+            $('.subscription-success').text(resp.msg).fadeIn();
+            $('.subscription-error').fadeOut();
+
+        } else if(resp.result === 'error') {
+            $('#subscribe-result').addClass('subs-result');
+            $('.subscription-error').text(resp.msg).fadeIn();
         }
     }
-})
-
-$('.country-slider').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: false,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 2
-        }
-    }
-})
-
-$(function () {
-    $("#tabs").tabs();
-});
-
-$('.inspiration-quotes').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    dots: true,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 3
-        }
-    }
-})
-
-$('.sunita-resume-slider').owlCarousel({
-    loop: false,
-    margin: 20,
-    nav: false,
-    dots: true,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-})
-
-$('.sunita-links').owlCarousel({
-    loop: false,
-    margin: 20,
-    nav: false,
-    dots: true,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 2
-        },
-        600: {
-            items: 3
-        },
-        1000: {
-            items: 5
-        }
-    }
-})
-
-
-$('.awards-slider').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    dots: false,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 2
-        }
-    }
-})
-
-
-$('.affiliation-slider').owlCarousel({
-    loop: false,
-    margin: 20,
-    nav: false,
-    dots: true,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: false,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 4
-        }
-    }
-})
-
-$('.media-slider').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    dots: true,
-    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-    autoplay: false,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    responsive: {
-        0: {
-            items: 1
-        },
-        768: {
-            items: 2
-        },
-        1000: {
-            items: 2
-        }
-    }
-})
-
-
-jQuery(document).ready(function () {
-    jQuery('.contact-form .form-control').on('focus', function () {
-        jQuery(this).parent().addClass('focused');
-    }).on('blur', function () {
-        jQuery(this).parent().removeClass('focused');
-    }).on('input', function () {
-        jQuery(this).parent().addClass('inputted');
-    });
-
-});
-
-$(document).ready(function () {
-    $(document).click(function (e) {
-        if (!$(e.target).is('.navbar, .navbar *')) {
-            $('.navbar-collapse').collapse('hide');
-        }
-    });
-});
+    $.ajaxChimp.translations.es = {
+        'submit': 'Submitting...',
+        0: 'We have sent you a confirmation email',
+        1: 'Please enter your email',
+        2: 'An email address must contain a single @',
+        3: 'The domain portion of the email address is invalid (the portion after the @: )',
+        4: 'The username portion of the email address is invalid (the portion before the @: )',
+        5: 'This email address looks fake or invalid. Please enter a real email address'
+    };
+             
+})(jQuery);
