@@ -25,7 +25,10 @@
         padding: 0 5px;
     }
     .blog-content p{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .video-content-wrapper ul li{
+        font-size: 18px;
     }
     .blog-items{
         padding: 0 10px;
@@ -111,17 +114,28 @@
 /* ---- Start of max-width 767px CSS ---- */
 @media all and (max-width: 767px) {
     body, p{
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 1.7;
     }
     h1{
         font-size: 30px;
     }
     h2{
-        font-size: 20px;
+        font-size: 20px!important;
+        line-height: 1.2;
+    }
+    .forefront .col-md-8 .row {
+        row-gap: 20px;
+    }
+    .counters {
+        row-gap: 0;
     }
     h3{
         font-size: 16px;
+    }
+    .padogogy-future .future-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     p br{
         display: none;
@@ -146,6 +160,10 @@
     }
     .pager-header{
         min-height: 220px;
+    }
+    .pager-header .page-content{
+        position: relative;
+        top: 30px;
     }
     .breadcrumb {
         right: auto;
@@ -178,22 +196,34 @@
     .slider-text h1{
         font-size: 28px;
     }
+    .hero-section {
+        height: auto;
+        padding-bottom: 50px;
+    }
     .slider-text p{
         font-size: 14px;
         margin-bottom: 10px;
     }
     .slider-text h5{
         font-size: 12px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
     .slider-text .default-btn{
-        display: none!important;
+        display: block !important;
+        width: max-content;
+        margin: 10px auto;
     }
     .owl-nav div{
         left: 0;
     }
     .owl-nav div.owl-next{
         right: 0;
+    }
+    .gallery-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-header ul.left-info {
+        text-align: center;
     }
     .footer-section .footer-social,
     .footer-section{
@@ -202,6 +232,7 @@
     .footer-social li a{ margin: 0 10px; }
     .site-branding img{
         padding: 5px 0;
+        width: 8rem;
     }
     .gallery-filter li{
         padding: 5px 10px;
@@ -211,6 +242,9 @@
     .reply-list{
         padding-left: 10px;
     }
+    .poster-presentation .col-md-12 .row {
+        row-gap: 20px;
+    }
     .comments-list .comment-box:before,
     .comments-list .comment-box:after,
     .comments-list:before{
@@ -218,6 +252,7 @@
     }
     .promo-wrap{
         margin: 0;
+        row-gap: 2px;
     }
     .promo-content{
         border: none;
@@ -272,6 +307,13 @@
     }
     .about-bg{
         display: none;
+    }
+    .gallery-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .padogogy-future .future-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
     .reg-content .counter{
         font-size: 50px;
